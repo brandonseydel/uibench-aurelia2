@@ -5,8 +5,8 @@ import { bindable, customElement } from "@aurelia/runtime";
         `
 <template>
     <ul class="TreeNode">
-    <tree-node repeat.for="item of treeNodes" key="\${item.id}" data.bind="item"/>
-    <tree-leaf repeat.for="item of treeLeafs" key="\${item.id}" data.bind="item"/>
+    <li as-element="tree-node" repeat.for="item of treeNodes" key="\${item.id}" data.bind="item"/>
+    <li as-element="tree-leaf" repeat.for="item of treeLeafs" key="\${item.id}" data.bind="item"/>
 
     </ul>
 </template>

@@ -5,7 +5,7 @@ import { bindable, customElement } from "@aurelia/runtime";
         `
 <template>
     <div class="Anim">
-        <anim-box repeat.for="item of data.items" key="\${item.id}} data.bind="item" />
+        <anim-box repeat.for="item of data.anim.items" key="\${item.id}" data.bind="item" />
     </div>
 </template>
 `})

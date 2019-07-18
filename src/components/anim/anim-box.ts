@@ -4,7 +4,7 @@ import { bindable, customElement } from "@aurelia/runtime";
     name: "anim-box", template: `
 <template>
 <div class="AnimBox" data-id="\${data.id}"
-    css="borderRadius:\${(data.time % 10).toString()}px;background:\${(0.5 + ((data.time % 10) / 10)).toString()}px" />;
+    css="border-radius:\${(data.time % 10).toString()}px;background:\${(0.5 + ((data.time % 10) / 10)).toString()}px" />
 </template>
 `})
 export class AnimBox {

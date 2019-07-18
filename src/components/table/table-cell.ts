@@ -5,9 +5,7 @@ import { bindable, customElement } from "@aurelia/runtime";
     name: 'table-cell',
     template: `
 <template>
-    <td class="TableCell" click.delegate="onClick($event)">
-        \${text}
-    </td>;
+    <td class="TableCell" click.delegate="onClick($event)">\${text}</td>
 </template>
 `})
 export class TableCell {

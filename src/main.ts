@@ -6,10 +6,10 @@ import { AnimBox } from 'components/anim/anim-box';
 import { TableCell } from 'components/Table/table-cell';
 import { TableComponent } from 'components/table/table-component';
 import { TableRow } from 'components/table/table-row';
+import { TreeElement } from 'components/tree/tree-element';
 import { TreeLeaf } from 'components/tree/tree-leaf';
 import { TreeNode } from 'components/tree/tree-node';
 import 'promise-polyfill/lib/polyfill';
-import { Tree } from 'tree';
 import { App } from './app';
 import './uibench-base/assets/styles.css';
 import * as uibench from './uibench-base/lib/uibench';
@@ -18,7 +18,7 @@ import * as uibench from './uibench-base/lib/uibench';
     `
 <template>
 <app if.bind="data" data.bind="data"/>
-<pre>\${sampleText}</pre>
+<pre if.bind="sampleText">\${sampleText}</pre>
 </template>
 `,
 })
@@ -48,7 +48,7 @@ const container =
   BasicConfiguration.createContainer().register(
     Main,
     App,
-    Tree,
+    TreeElement,
     TreeLeaf,
     TreeNode,
     TableComponent,

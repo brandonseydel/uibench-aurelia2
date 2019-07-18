@@ -4,7 +4,7 @@ import { bindable, customElement } from "@aurelia/runtime";
     name: 'tree-leaf', template:
         `
 <template>
-    <li class="TreeLeaf">{data.id}</li>
+    <li class="TreeLeaf">\${data.id}</li>
 </template>
 `})
 export class TreeLeaf {

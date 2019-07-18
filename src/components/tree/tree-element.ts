@@ -1,14 +1,14 @@
 import { bindable, customElement } from "@aurelia/runtime";
 
 @customElement({
-    name: 'tree-leaf', template:
+    name: 'tree-element', template:
         `
 <template>
     <div class="Tree">
-        <tree-node data.bind="data.root" />
-    </div>;
+        <tree-node data.bind="data.tree.root"></tree-node>
+    </div>
 </template>
 `})
-export class Tree {
+export class TreeElement {
     @bindable public data: any;
 }
