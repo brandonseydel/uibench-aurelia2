@@ -1,12 +1,13 @@
 import { bindable, customElement } from "@aurelia/runtime";
 
 @customElement({
+    containerless: true,
     name: 'table-row',
     template:
         `
 <template>
 <tr class="\${classes}" data-id="\${data.id}">
-    <table-cell repeat.for="cell of data.props" text.bind="cell" />
+    <td as-element="table-cell" repeat.for="cell of data.props" text.bind="cell" />
 </tr>
 </template>
 `})

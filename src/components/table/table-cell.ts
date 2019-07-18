@@ -1,6 +1,7 @@
 import { bindable, customElement } from "@aurelia/runtime";
 
 @customElement({
+    containerless: true,
     name: 'table-cell',
     template: `
 <template>
