@@ -14,11 +14,12 @@ import { App } from './app';
 import './uibench-base/assets/styles.css';
 import * as uibench from './uibench-base/lib/uibench';
 @customElement({
+  containerless: true,
   name: 'main', template:
     `
 <template>
-<app if.bind="data" data.bind="data"/>
-<pre if.bind="sampleText">\${sampleText}</pre>
+<app if.bind="data" data.one-time="data"/>
+<pre if.bind="samples">\${sampleText & oneTime}</pre>
 </template>
 `,
 })

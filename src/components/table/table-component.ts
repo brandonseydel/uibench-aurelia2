@@ -6,7 +6,7 @@ import { bindable, customElement } from "@aurelia/runtime";
 <template>
     <table class="Table">
         <tbody>
-            <tr as-element="table-row" repeat.for="item of data.table.items" data.bind="item" />
+            <tr as-element="table-row" repeat.for="item of data.table.items" data.one-time="item" />
         </tbody>
     </table>
 </template>

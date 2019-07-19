@@ -1,10 +1,11 @@
 import { bindable, customElement } from "@aurelia/runtime";
 
 @customElement({
+    containerless: true,
     name: 'tree-leaf', template:
         `
 <template>
-    <li class="TreeLeaf">\${data.id}</li>
+    <li class="TreeLeaf">\${data.id & oneTime}</li>
 </template>
 `})
 export class TreeLeaf {
